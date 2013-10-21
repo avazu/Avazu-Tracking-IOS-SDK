@@ -10,6 +10,6 @@
 
 @protocol AvazuTrackingDelegate <NSObject>
 
-+ (void)reportAppDownloadGoal;
++ (void)reportAppDownloadGoal:(NSString *)uniqidIn;
 
 @end
