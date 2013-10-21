@@ -36,7 +36,7 @@ Import the header files of SDK files in the application delegate file as shown b
 ```objectc
 -(void)applicationDidFinishLaunching:(UIApplication *)application {    
     // com.avazu.sdk.tracking ********* Your code here
-    [AvazuTracking_TrackerSdk reportAppDownloadGoal:@"Your the uniq id here"];
+    [AvazuTracking_TrackerSdk reportAppDownloadGoal:@"Your uniq id here"];
 
 //Detect device performance
 highPerformance = [self isHighPerformanceSystem];
