@@ -35,8 +35,8 @@ Import the header files of SDK files in the application delegate file as shown b
 ######Send the Avazu Tracking to server during the first launch of your app after install, in the application delegate file as shown below:
 ```objectc
 -(void)applicationDidFinishLaunching:(UIApplication *)application {    
-    // com.avazu.sdk.tracking *********
-    [AvazuTracking_TrackerSdk reportAppDownloadGoal];
+    // com.avazu.sdk.tracking ********* Your code here
+    [AvazuTracking_TrackerSdk reportAppDownloadGoal:@"Your the uniq id here"];
 
 //Detect device performance
 highPerformance = [self isHighPerformanceSystem];
