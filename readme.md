@@ -20,12 +20,6 @@ Note: You should mark all framework as optional if your code compiles below iOS 
 - 3	In the Search field, search for 'Other Linker Flags'.
 - 4	Add the -ObjC flag.
  
-######Modify the Architectures to armv6 and armv7 for fix a problem base on IOS7
-- 1	Open your project in Xcode.
-- 2	Select Application Target > Build Settings.
-- 3	In the Search field, search for 'architectures'.
-- 4	Modify items Architectures and Valid Architectures to ‘armv6 armv7’.
- 
 ######Setting the Delegate to send tracking
 It is mandatory to run the SDK Tracking before app launch.
 Import the header files of SDK files in the application delegate file as shown below:
@@ -36,7 +30,7 @@ Import the header files of SDK files in the application delegate file as shown b
 ```objectc
 -(void)applicationDidFinishLaunching:(UIApplication *)application {    
     // com.avazu.sdk.tracking ********* Your code here
-    [AvazuTracking_TrackerSdk reportAppDownloadGoal:@"Your uniq id here"];
+    [AvazuTracking reportAppDownloadGoal:@"Your uniq id here"];
 
 //Detect device performance
 highPerformance = [self isHighPerformanceSystem];
