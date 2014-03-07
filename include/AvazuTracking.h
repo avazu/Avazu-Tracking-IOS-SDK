@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AvazuTrackingDelegate.h"
 
-@interface AvazuTracking : NSObject<AvazuTrackingDelegate>
+@interface AvazuTracking : NSObject
+
++ (void)reportAppDownloadGoal:(NSString *)uniqidIn;
 
 @end
