@@ -9,6 +9,8 @@ Copy the SDK directory into your project directory at first, then open up the po
 ####Adding Frameworks
 ######You will need to add some optional/mandatory frameworks into your Xcode project for the SDK . The frameworks required to compile the Avazu Tracking SDK library are given below:
 - AVFoundation.framework
+- MapKit.framework
+- AdSupport.framework
 - libz.1.2.5.dylib
  
 Note: You should mark all framework as optional if your code compiles below iOS version 6.0.
