@@ -1,9 +1,9 @@
 ####Avazu Tracking iOS SDK Requirements:
-######The Avazu Tracking SDK for iOS contains the code necessary to integrate Avazu’s in-app conversion tracking into your applications. This SDK is designed to work across all iOS platforms, with a minimum OS version of 4.3. 
+######The Avazu Tracking SDK for iOS contains the code necessary to integrate Avazu’s in-app conversion tracking into your applications. This SDK is designed to work across all iOS platforms, with a minimum OS version of 5.0.
 
 ####To integrate, perform the below steps:
 ######Adding the SDK to your Project
-Copy the SDK directory into your project directory at first, then open up the popup menu and click into your project within Xcode, and select “Add File to “Your project name”” to import our SDK. 
+Copy the SDK directory(./AvazuTrackingSdk) into your project directory at first, then open up the popup menu and click into your project within Xcode, and select “Add File to “Your project name”” to import our SDK.
  
 
 ####Adding Frameworks
