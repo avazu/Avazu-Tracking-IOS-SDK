@@ -11,6 +11,7 @@ Copy the SDK directory(./AvazuTrackingSdk) into your project directory at first,
 - AVFoundation.framework
 - AdSupport.framework
 - libz.1.2.5.dylib
+- MapKit.framework
  
 Note: You should mark all framework as optional if your code compiles below iOS version 6.0.
 
