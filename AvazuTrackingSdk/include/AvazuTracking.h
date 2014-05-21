@@ -10,6 +10,8 @@
 
 @interface AvazuTracking : NSObject
 
+@property (nonatomic, retain) NSURLConnection *connection;
+
 + (void)reportAppDownloadGoal:(NSString *)uniqidIn;
 
 @end
