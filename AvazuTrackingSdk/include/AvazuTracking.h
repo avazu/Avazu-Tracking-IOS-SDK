@@ -12,6 +12,8 @@
 
 @property (nonatomic, retain) NSURLConnection *connection;
 
++ (void)reportAppDownloadGoalWithSales:(NSString *)sales;
++ (void)reportAppDownloadGoal:(NSString *)uniqidIn sales:(NSString *)sales;
 + (void)reportAppDownloadGoal:(NSString *)uniqidIn;
 
 @end
