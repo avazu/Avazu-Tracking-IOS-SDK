@@ -30,18 +30,6 @@ Import the header files of SDK files in the application delegate file as shown b
 ```
 ######Send the Avazu Tracking to server during the first launch of your app after install, in the application delegate file as shown below:
 ```objectc
--(void)applicationDidFinishLaunching:(UIApplication *)application {    
-    // com.avazu.sdk.tracking ********* Your code here
-    [AvazuTracking reportAppDownloadGoal:@"Your uniq id here"];
-
-//Detect device performance
-highPerformance = [self isHighPerformanceSystem];
-
-//Setup window with menu view controller
-self.menuViewController = [[MenuViewControlleralloc] initWithNibName:@"MenuViewController" bundle:nil];
-window.rootViewController = self.menuViewController;
-    [window makeKeyAndVisible];//Fade in first view controller
-    [menuViewController setRootFadingViewController];
-}
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];    // Override point for customization after application launch.    self.window.backgroundColor = [UIColor whiteColor];    [self.window makeKeyAndVisible];        // Avazu Tracking Sdk    [AvazuTracking reportAppDownloadGoalWithSales:nil];}
 ```
 Note: Once your app is installed and launched, our server is getting called and an install is tracked.
