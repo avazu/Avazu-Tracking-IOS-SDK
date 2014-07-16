@@ -14,13 +14,6 @@ Copy the SDK directory(./AvazuTrackingSdk) into your project directory at first,
 - MapKit.framework
  
 Note: You should mark all framework as optional if your code compiles below iOS version 6.0.
-
-####Adding Additional Build Settings
-######Add the -ObjC flag to the Other Linker Flags. To do so, perform the below steps:
-- 1	Open your project in Xcode.
-- 2	Select Application Target > Build Settings.
-- 3	In the Search field, search for 'Other Linker Flags'.
-- 4	Add the -ObjC flag.
  
 ######Setting the Delegate to send tracking
 It is mandatory to run the SDK Tracking before app launch.
